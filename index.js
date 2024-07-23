@@ -68,6 +68,95 @@ const questions = [
     ],
     coefs: [1, 6, 2, 3],
   },
+  {
+    id: 5,
+    substances: [
+      {
+        reagents: [
+          { name: 'sodium', formula: 'Na(s)', coef: 2 },
+          { name: 'water', formula: 'H2O', coef: 2 },
+        ],
+      },
+      {
+        products: [
+          { name: 'sodiumHidroxide', formula: 'NaOH(aq)', coef: 2 },
+          { name: 'molecularHydrogen', formula: 'H2(g)', coef: 1 },
+        ],
+      },
+    ],
+    coefs: [2, 2, 2, 1],
+  },
+  {
+    id: 6,
+    substances: [
+      {
+        reagents: [
+          { name: 'ferricOxide', formula: 'Fe2O3(s)', coef: 1 },
+          { name: 'sulfurTrioxide', formula: 'SO3(g)', coef: 3 },
+        ],
+      },
+      {
+        products: [
+          { name: 'ferricSulphate', formula: 'Fe2(SO4)3(s)', coef: 1 },
+        ],
+      },
+    ],
+    coefs: [1, 3, 1],
+  },
+  {
+    id: 7,
+    substances: [
+      {
+        reagents: [
+          { name: 'leadTwoChloride', formula: 'PbCl2', coef: 3 },
+          { name: 'aluminiumSulphate', formula: 'Al2(SO4)3', coef: 1 },
+        ],
+      },
+      {
+        products: [
+          { name: 'leadTwoSulphate', formula: 'PbSO4', coef: 3 },
+          { name: 'aluminiumChloride', formula: 'AlCl3', coef: 2 },
+        ],
+      },
+    ],
+    coefs: [3, 1, 3, 2],
+  },
+  {
+    id: 8,
+    substances: [
+      {
+        reagents: [
+          { name: 'nitricAcid', formula: 'HNO3', coef: 2 },
+          { name: 'calciumHidroxide', formula: 'Ca(OH)2', coef: 1 },
+        ],
+      },
+      {
+        products: [
+          { name: 'water', formula: 'H2O', coef: 2 },
+          { name: 'calciumNitrate', formula: 'Ca(NO3)2', coef: 1 },
+        ],
+      },
+    ],
+    coefs: [2, 1, 2, 1],
+  },
+  {
+    id: 9,
+    substances: [
+      {
+        reagents: [
+          { name: 'benzene', formula: 'C6H6(l)', coef: 2 },
+          { name: 'oxygen', formula: 'O2(g)', coef: 15 },
+        ],
+      },
+      {
+        products: [
+          { name: 'carbonDioxide', formula: 'CO2(g)', coef: 12 },
+          { name: 'water', formula: 'H2O(l)', coef: 6 },
+        ],
+      },
+    ],
+    coefs: [2, 15, 12, 6],
+  },
 ];
 
 function createCard(question) {
@@ -136,6 +225,7 @@ function createCard(question) {
         `Q${question.id} - ` + 'Coeficientes Estequiométricos Inválidos !!'
       );
     }
+    event.preventDefault();
   });
   buttonDiv.appendChild(button);
   form.appendChild(buttonDiv);
