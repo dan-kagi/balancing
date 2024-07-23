@@ -74,7 +74,7 @@ const questions = [
       {
         reagents: [
           { name: 'sodium', formula: 'Na(s)', coef: 2 },
-          { name: 'water', formula: 'H2O', coef: 2 },
+          { name: 'water', formula: 'H2O(l)', coef: 2 },
         ],
       },
       {
