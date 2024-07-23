@@ -157,6 +157,24 @@ const questions = [
     ],
     coefs: [2, 15, 12, 6],
   },
+  {
+    id: 10,
+    substances: [
+      {
+        reagents: [
+          { name: 'ethane', formula: 'C2H6', coef: 2 },
+          { name: 'oxygen', formula: 'O2', coef: 7 },
+        ],
+      },
+      {
+        products: [
+          { name: 'carbonDioxide', formula: 'CO2', coef: 4 },
+          { name: 'water', formula: 'H2O', coef: 6 },
+        ],
+      },
+    ],
+    coefs: [2, 7, 4, 6],
+  },
 ];
 
 function createCard(question) {
