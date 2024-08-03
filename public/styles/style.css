@@ -96,7 +96,7 @@ button:active {
 @media (max-width: 900px) {
   .card {
     width: 98%;
-    font-size: 0.8rem;
+    font-size: 0.62rem;
   }
   h1 {
     font-size: 0.9rem;
